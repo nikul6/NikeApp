@@ -6,9 +6,11 @@ import { useSelector } from 'react-redux';
 import { selectDeliveryPrice, selectSubTotal, selectTotal } from '../store/cartSlice';
 
 const ShoppingCartTools = () => {
+
   const subTotal = useSelector(selectSubTotal);
   const deliveryFee = useSelector(selectDeliveryPrice);
   const total = useSelector(selectTotal)
+
   return (
     <View style={styles.totalConatiner}>
       <View style={styles.row}>
@@ -36,9 +38,7 @@ export default function ShoppingCart() {
         renderItem={({ item }) => <CartListItem cartItem={item} />}
         ListFooterComponent={ShoppingCartTools}
       />
-      <Pressable style={styles.button}
-      // onPress={addTocart}
-      >
+      <Pressable style={styles.button}>
         <Text style={styles.buttonText}>Checkout</Text>
       </Pressable>
     </>

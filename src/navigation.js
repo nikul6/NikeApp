@@ -15,7 +15,6 @@ const Stack = createNativeStackNavigator();
 
 function Navigation() {
     const numberOfitems = useSelector(selectNumberOfItems)
-    console.log("numberOfitems ---> ", numberOfitems)
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{contentStyle: {backgroundColor:'#fff'}}}>

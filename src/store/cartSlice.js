@@ -20,13 +20,13 @@ export const cartSlice = createSlice({
             }
         },
         changeQuanity: (state, action) => {
-            const {productId, amount} = action.payload;
-            const cartItem = state.items.find((item)=> item.product.id === productId)
-            if(cartItem){
+            const { productId, amount } = action.payload;
+            const cartItem = state.items.find((item) => item.product.id === productId)
+            if (cartItem) {
                 cartItem.quantity += amount
             }
-            if(cartItem.quantity <= 0){
-                state.items = state.items.filter((item)=> item !== cartItem)
+            if (cartItem.quantity <= 0) {
+                state.items = state.items.filter((item) => item !== cartItem)
             }
         }
     }
@@ -34,7 +34,7 @@ export const cartSlice = createSlice({
 
 export const selectNumberOfItems = (state) => state.cart.items.length;
 
-export const selectSubTotal = (state) => state.cart.items.reduce((sum, cartItem)=>
+export const selectSubTotal = (state) => state.cart.items.reduce((sum, cartItem) =>
     sum + cartItem.product.price * cartItem.quantity, 0
 )
 
@@ -45,7 +45,7 @@ export const selectDeliveryPrice = createSelector(
     selectSubTotal, (cart, subTotal) => (subTotal > cart.freeDeliveryFrom ? 0 : cart.deliveryFee)
 )
 
-export const selectTotal = createSelector( 
+export const selectTotal = createSelector(
     selectSubTotal,
     selectDeliveryPrice,
     (subTotal, delivery) => subTotal + delivery

@@ -4,8 +4,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { productSlice } from '../store/productSlice';
 
 export default function ProductScreen({ navigation }) {
+
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
+  
   return (
     <View>
       <FlatList

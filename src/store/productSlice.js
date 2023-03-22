@@ -10,9 +10,9 @@ export const productSlice = createSlice({
     name: 'products',
     initialState: initialState,
     reducers: {
-        setSelectedProduct: (state, action)=>{
-           const productId = action.payload;
-           state.selectedProduct = state.products.find((p)=> p.id === productId);
+        setSelectedProduct: (state, action) => {
+            const productId = action.payload;
+            state.selectedProduct = state.products.find((p) => p.id === productId);
         }
     }
 })
