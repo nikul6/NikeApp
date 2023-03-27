@@ -20,6 +20,14 @@ and then run the expo app
 npx expo start
 ```
 
+## 🚀 UI
+ProductScreen
+![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductScreen.png)
+ProductDeatilsScreen
+![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductDeatilsScreen.png)
+ShoppingCart
+![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ShoppingCart.png)
+
 ## 📝 Notes
 
 - [React Navigation: Docs](https://reactnavigation.org/)
