@@ -21,12 +21,9 @@ npx expo start
 ```
 
 ## 🚀 UI
-ProductScreen
-![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductScreen.png)
-ProductDeatilsScreen
-![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductDeatilsScreen.png)
-ShoppingCart
-![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ShoppingCart.png)
+ProductScreen             |  ProductDeatilsScreen     |  ShoppingCart
+:-------------------------:|:-------------------------:
+![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductScreen.png)  |  ![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ProductDeatilsScreen.png)   |   ![alt text](https://github.com/nikul6/NikeApp/blob/master/assets/AppImages/ShoppingCart.png)
 
 ## 📝 Notes
 
